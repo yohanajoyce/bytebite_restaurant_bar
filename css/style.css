@@ -146,7 +146,7 @@ html{
   font-family: var(--fontFamily-dm_sans);
   font-size: var(--weight-regular);
   font-weight: var(--lineHeight-5);
-  overflow: hidden;
+  overflow: overflow;
   height: 300vh;
 }
 
