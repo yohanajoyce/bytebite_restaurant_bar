@@ -98,7 +98,8 @@
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
-*::before
+*,
+*::before,
 *::after{
   margin: 0;
   padding: 0;
@@ -139,16 +140,24 @@ textarea{
 button{cursor: pointer;}
 
 address{font-style: normal;}
-
+ 
 html{
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body{
   background-color: var(--eerie-black-1);
   color: var(--white);
   font-family: var(--fontFamily-dm_sans);
-  font-size: var(--weight-regular);
-  font-weight: var(--lineHeight-5);
-  overflow: overflow;
+  font-size: var(--fontsize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-5)
+  overflow: hidden;
   height: 300vh;
 }
+ 
+
 
 body.loaded {overflow: overlay;}
 body.nav-acctive{overflow: hidden;}
@@ -161,12 +170,12 @@ body.nav-acctive{overflow: hidden;}
 /*-----------------------------------*\
   #TYPOGRAPHY
 \*-----------------------------------*/
-.display-1
-.headline-1
-.headline-2
-.title-1
-.title-2
-.title-3
+.display-1,
+.headline-1,
+.headline-2,
+.title-1,
+.title-2,
+.title-3,
 .title-4{
   color: var(--white);
   font-family: var(--fontFamily-forum);
