@@ -311,11 +311,11 @@ alt = grilli home
 
 Restaurant St, Delicious City, London 9578, UK
 
-booking@grilli.com
+booking@grilli.com bytebite@restaurant.com
 
-Booking Request : +88-123-123456
+Booking Request : +62 876543219
 
-Open : 09:00 am - 01:00 pm
+Open : 09:00 am - 01:00 pm   Daily Open At : 08.00am to 11.00 pm
 
 Get News & Offers
 

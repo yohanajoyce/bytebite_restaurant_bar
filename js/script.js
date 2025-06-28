@@ -35,10 +35,11 @@ const togglerNavbar = function () {
 addEventOnElements(navTogglers, "click", togglerNavbar);
 
 /**
- *  HEADER
+ *  HEADER back to top
  */
 
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]")
 
 let lastScrollPos = 0;
 
@@ -47,7 +48,7 @@ const hideHeader = function () {
   if (isScrollBottom) {
     header.classList.add("hide");
   } else {
-    header.classsList.remove("hide");
+    header.classList.remove("hide");
   }
 
   lastScrollPos = window.scrollY;
@@ -55,9 +56,11 @@ const hideHeader = function () {
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.classList.add("active");
+    backTopBtn.classList.add("active");
     hideHeader();
   } else {
     header.classList.remove("active");
+    backTopBtn.classList.remove("active");
   }
 });
 
