@@ -57,7 +57,7 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.classList.add("active");
     backTopBtn.classList.add("active");
-    hideHeader();
+    hideHeader(0);
   } else {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
@@ -152,3 +152,17 @@ window.addEventListener("mousemove", function (event) {
     parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
   }
 });
+
+
+/**
+ * features
+ */
+
+function toggleInfo(infoId){
+    const infoDiv = document.getElementById(infoId)
+    if (infoDiv.style.display === "none" || infoDiv.style.display ===""){
+        infoDiv.style.display = "block";
+    }else{
+        infoDiv.style.display = "none";
+    }
+}
